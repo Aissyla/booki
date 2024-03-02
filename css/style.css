@@ -95,6 +95,129 @@ header li:hover {
     color: var(--main-color);
 }
 
+/****** Search section ***********/
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/****** Headline ***********/
+
+#search-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+}
+
+/****** Search Bar ***********/
+
+#search-bar {
+    display: flex;
+    height: 50px;
+}
+
+.text-input-label {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.text-input-label i {
+    color: black;
+}
+
+.search-input {
+    border: 1px solid #F2F2F2;
+    color: black;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.search-input::placeholder {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.text-input-button {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/****** Filters ***********/
+
+#filter-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.option-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.filter-buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-button {
+    border-radius: 25px;
+    border: 2px solid var(--filter-bg-color);
+    background-color: white;
+    padding: 15px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filter-button i {
+    margin-right: 10px;
+}
+
+/****** Info Bar ***********/
+
+#info-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#info-bar i {
+    text-align: center;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--filter-bg-color);
+    border-radius: 50%;
+    font-size: 12px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
