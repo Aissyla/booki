@@ -122,16 +122,13 @@ header li:hover {
     height: 50px;
 }
 
-.text-input-label {
+#search-bar i {
+    color: black;
     display: flex;
     align-items: center;
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 15px 0 0 15px;
-}
-
-.text-input-label i {
-    color: black;
 }
 
 .search-input {
