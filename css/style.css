@@ -449,11 +449,7 @@ footer {
     }
 
     header li:hover{
-        border: none;
-        color: none;
-    }
-
-    header li:hover{
+        border-top: none;
         border-bottom: 2px solid var(--main-color);
         color: var(--main-color);
     }
