@@ -190,6 +190,10 @@ header li:hover {
     font-size: 18px;
 }
 
+.icon-input-button {
+    display: none;
+}
+
 /****** Filters ***********/
 
 #filter-bar {
@@ -480,15 +484,20 @@ footer {
     }
 
     .text-input-button {
+        display: none;
+    }
+
+    .icon-input-button {
+        display: block;
         position: relative;
         height: 50px;
         width: 50px;
         border-radius: 15px 0 0 15px;
-        background-color: white;
+        color: white;
         border: none;
     }
 
-    .text-input-button::before {
+    .icon-input-button::before {
         position: absolute;
         box-sizing: border-box;
         left: -1px;
@@ -509,7 +518,6 @@ footer {
 
     .filter-buttons-container {
         gap: 10px;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
