@@ -499,7 +499,6 @@ footer {
 
     .icon-input-button::before {
         position: absolute;
-        box-sizing: border-box;
         left: -1px;
         top: -1px;
         content: '\f002';
