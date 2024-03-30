@@ -327,9 +327,12 @@ header li:hover {
 }
 
 .activites-cards {
-    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+}
+
+.activites-cards a{
+    width: 100%;
 }
 
 .activites-cards .card {
@@ -337,7 +340,7 @@ header li:hover {
 }
 
 .activites-cards .card img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
@@ -397,12 +400,7 @@ footer {
         font-size: 13px;
     }
 
-    .activites-cards{
-        flex-wrap: nowrap;
-    }
-
     .activites-cards .card img {
-        width: 193px;
         height: 200px;
     }
 
@@ -591,11 +589,7 @@ footer {
     /****** Activites ***********/
 
     .activites-cards{
-        flex-wrap: wrap;
-    }
-
-    .activites-cards .card img {
-        width: 315px;
+        flex-direction: column;
     }
 
     /****** Footer ***********/
