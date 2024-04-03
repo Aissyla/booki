@@ -151,6 +151,7 @@ header li:hover {
 
 #search-bar {
     height: 50px;
+    border-radius: 15px;
 }
 
 #search-bar i {
@@ -212,11 +213,13 @@ header li:hover {
 }
 
 .filter-button {
+    align-items: center;
+    display: flex;
+    padding: 4px 19px;
     border-radius: 25px;
     cursor: pointer;
     border: 2px solid var(--filter-border-color);
     background-color: white;
-    padding: 15px;
     height: 50px;
     font-weight: 700;
     font-size: 17px;
@@ -228,6 +231,7 @@ header li:hover {
 
 .filter-button i {
     margin-right: 10px;
+    font-size: 18px;
 }
 
 /****** Info Bar ***********/
@@ -266,6 +270,10 @@ header li:hover {
     justify-content: center;
     gap: 30px;
 }
+
+/* .hebergement-cards .card article {
+    width: 33.33%;
+} */
 
 .hebergement-cards .card .card-content .card-title, .card-subtitle {
     margin: 5px 0;
@@ -472,6 +480,8 @@ footer {
     #search-bar {
         display: flex;
         width: 100%;
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
     }
 
     .search-input {
@@ -479,6 +489,7 @@ footer {
         text-align: left;
         padding-left: 24px;
         padding-right: 8px;
+        border: none;
     }
 
     .text-input-button {
@@ -488,9 +499,7 @@ footer {
     .icon-input-button {
         display: block;
         position: relative;
-        height: 50px;
-        width: 50px;
-        border-radius: 15px 0 0 15px;
+        left: -30px;
         color: white;
         border: none;
     }
@@ -498,11 +507,11 @@ footer {
     .icon-input-button::before {
         position: absolute;
         box-sizing: border-box;
-        left: -1px;
+        left: -18px;
         top: -1px;
         content: '\f002';
-        width: 50px;
-        height: 50px;
+        width: 49px;
+        height: 49px;
         background-color: var(--main-color);
         border: 1px solid var(--main-color);
         border-radius: 15px;
@@ -510,18 +519,20 @@ footer {
         font-size: 17px;
         font-weight: 600;
         padding-top: 16px;
-        padding-bottom: 0px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
     }
 
     .filter-buttons-container {
+        width: 100%;
         gap: 10px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     
     }
 
     .filter-button {
-        width: 160px;
         font-size: 14px;
+        padding: 10px;
     }
 
     /****** Hebergements + Populaires ***********/
@@ -590,6 +601,10 @@ footer {
 
     .activites-cards{
         flex-direction: column;
+    }
+
+    .activites-cards .card img {
+        height: 141px;
     }
 
     /****** Footer ***********/
